@@ -5,7 +5,7 @@
 
 # Build image (docker file is in the WebApplication1 project) :
 
-`docker build -t k8s-prototype:v1 .
+`docker build -t k8s-prototype:v1 .`
 
 # Manual deploy :
 
