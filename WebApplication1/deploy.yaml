@@ -1,0 +1,22 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: k8s
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: k8s-prototype
+          image: k8s-prototype
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 80
+        - name: nginx
+          image: nginx
+          ports:
+            - containerPort: 88
