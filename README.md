@@ -15,7 +15,7 @@ You can verify if app is deployed with `kubectl get pods` & `kubectl get deploym
 
 ### Make app accessible :
 
-kubectl expose deployment k8s-prototype --type=NodePort
+`kubectl expose deployment k8s-prototype --type=NodePort`
 
 You can now execute `kubectl get services` to see the port used by kubernetes to proxy the pods. You can access the app with
 
