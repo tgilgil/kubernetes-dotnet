@@ -3,7 +3,7 @@
 1. Install Docker for Windows
 2. Activate Kubernetes in Docker for Windows options
 
-#Build image (docker file is in the WebApplication1 project) :
+# Build image (docker file is in the WebApplication1 project) :
 
 `docker build -t k8s-prototype:v1 .
 
@@ -13,7 +13,7 @@
 
 You can verify if app is deployed with `kubectl get pods` & `kubectl get deployments`
 
-## Make app accessible :
+### Make app accessible :
 
 kubectl expose deployment k8s-prototype --type=NodePort
 
