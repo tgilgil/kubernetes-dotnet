@@ -27,7 +27,7 @@ You can now execute `kubectl get services` to see the port used by kubernetes to
 
 The yaml file contains the specs for the app. It will deploy two replica pods that contains nginx & the dotnet app.
 
-# Auto recovery
+### Auto recovery
 
 run 
 
